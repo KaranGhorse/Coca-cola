@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div class="red"></div>
+        <nav>
+            <div class="logo"></div>
+            <label for="more"><i class="ri-menu-fill more"></i></label>
+            <input type="checkbox" id="more">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="text">
+                <h2>Taste the Feeling</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repudiandae ad ab aperiam
+                    maxime labore recusandae porro dolorem quasi. Ab ratione ipsum quaerat sint eaque voluptate
+                    molestiae omnis quo, illum, aspernatur iusto eius ducimus laboriosam quas ipsa culpa totam minima.
+                </p>
+                <a href="#" class="lm">Learn More</a>
+            </div>
+            <div class="coc">
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" >
+                            <img src="cocacola1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="cocacola2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="cocacola3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="cocacola4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="cocacola5.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="cocacola6.png" />
+                        </div>
+                        
+                        <!-- <div class="swiper-pagination"></div>-->
+                    </div>
+                </div>
+            </div>
+     
+        </div>
+        <div class="media">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-github-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </div>
+
+        <footer><p>Made by me &#169; with love &hearts;</p></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 6,
+                stretch: 0,
+                depth: 150,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
